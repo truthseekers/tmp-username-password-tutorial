@@ -1,0 +1,12 @@
+https://stackoverflow.com/questions/26015686/how-to-open-sqlite-files
+
+** SESSION BASED ***
+https://www.passportjs.org/tutorials/password/
+
+
+Where does the req.login come from in the signup route? Passport exposes it on req. So.. this probably comes from doing the app.use(passport).
+I'm guessing it attaches a .login() on the req.
+See: https://www.passportjs.org/concepts/authentication/login/
+
+***Issue: For some reason I have to login with a working account, then log out. THEN I can create an account which will log in after creation.
+If I just turn on the server and create an account I get an error "failed to deserialize".
